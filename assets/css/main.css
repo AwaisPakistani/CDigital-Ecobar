@@ -47,6 +47,8 @@ body {
 .contact-btn .btn-main{
   color: white !important;
   background: #000;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .text-main {
@@ -119,13 +121,13 @@ body {
 }
 
 .navbar ul .nav-item a.nav-link {
-  color: var(--main-color-3);
+  color: black;
   font-weight: 300;
   /* font-size: 14px; */
   letter-spacing: 0pc;
   position: relative;
   padding: 0px !important;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
   text-transform: capitalize;
 }
 
@@ -133,10 +135,10 @@ body {
   font-weight: 500;
 }
 .navbar ul .nav-item a.nav-link:focus {
-  color: var(--main-color-3);
+  color: black !important;
 }
 .navbar ul .nav-item a.nav-link:hover {
-  color: var(--main-color-3);
+  color: black !important;
   /* font-weight: 500; */
   transition: all 0.5s ease;
 }
@@ -232,7 +234,7 @@ body {
   font-weight: 700;
   text-decoration: underline;
   font-family: var(--main-font-family);
-  color: var(--main-color-2);
+  color: black;
   text-transform: uppercase;
 }
 .mega-menu ul li {
@@ -285,20 +287,21 @@ body {
 }
 
 .mySwiper .swiper-slide .slide-text h1 {
-  font-size: 170px;
-  font-weight: 400;
-  font-family: serif;
+  font-size: 165px;
+  font-weight: 340;
   margin-top: 50px;
   width:100%;
-  line-height: normal;
-  color: black;
-  white-space: nowrap;
+  margin: 0px !important;
+  padding: 0px !important;
+  color: #000000;
   overflow: hidden;
 }
 .mySwiper .swiper-slide .slide-text p {
   font-weight: 600;
-  font-size: 170px;
-  color: #922b21;
+  margin: 0px !important;
+  padding: 0px !important;
+  font-size: 165px;
+  color: #915D3D;
 }
 
 button.slick-disabled {
@@ -309,33 +312,7 @@ button.slick-disabled {
 /* .animate__slower{
   animation-delay: 1ms;
 } */
-.mySwiper .swiper-pagination {
-  margin-bottom: 50px;
-}
 
-.mySwiper .swiper-pagination-bullet {
-  width: 140px;
-  border-radius: 0px;
-  background: var(--main-color-4) !important;
-  border: 1px solid var(--main-color-3) !important;
-  color: var(--main-color-3);
-  position: relative;
-  opacity: 1;
-  margin: 0 20px !important;
-  text-align: left;
-}
-
-.mySwiper .swiper-pagination-bullet .buttet-text {
-  position: absolute;
-  top: -35px;
-  left: 0;
-  white-space: nowrap;
-  width: 100%;
-  margin: auto;
-}
-.mySwiper .swiper-pagination-bullet-active {
-  background: var(--main-color-3) !important;
-}
 
 /* Header section End */
 
@@ -830,12 +807,12 @@ button.slick-disabled {
 .main-category-text h2 {
   font-size: 48px;
   font-weight: 500;
-  color: var(--main-color-2);
+  color: black;
 }
 .main-category-text p {
   font-size: 18px;
   font-weight: 400;
-  color: var(--text-color);
+  color: black;
 }
 .main-category .row {
   padding: 50px 70px;
@@ -1174,7 +1151,6 @@ span.plus {
 .dropzone.dz-started .dz-message {
   display: inline-block !important;
   width: 120px;
-  float: right;
   border: 1px solid rgba(238, 238, 238, 0.36);
   border-radius: 30px;
   height: 120px;
@@ -1460,7 +1436,7 @@ label{
   .mega-menu.show {
     visibility: visible !important;
     opacity: 1;
-    transition: visibility 0s, opacity 0.3s linear !important;
+    /* transition: visibility 0s, opacity 0.3s linear !important; */
     left:0px !important;
   }
   .mega-menu.resources .text-end {
@@ -1470,15 +1446,14 @@ label{
     content: "\2b";
     border: 0px !important;
     display: inline-block;
-    float: inline-end;
     font-size: 30px;
     font-family: "FontAwesome";
     line-height: 27px;
     transition: all 0.5s ease;
   }
-  .dropdown-toggle.show::after {
+  /* .dropdown-toggle.show::after {
     content: "-";
-  }
+  } */
   .mobile-menu {
     display: contents;
   }
@@ -1487,15 +1462,20 @@ label{
     z-index: 3;
     background: var(--main-color-2);
     /* min-height: 100vh; */
+  
   }
   .navbar-nav {
     min-height: 100vh;
+  }
+  .navbar-nav ul li a{
+    color: black !important;
   }
   .navbar-nav.bordered{
     border: 0px;
     /* margin: 0px !important; */
   }
   ul.navbar-nav {
+    color: black !important;
     justify-content: start !important;
   }
   .navbar-toggler:focus {
@@ -1580,9 +1560,6 @@ label{
   }
   .mySwiper .swiper-pagination-bullet .buttet-text {
     display: none;
-  }
-  .division-text {
-    padding: 20px 0px;
   }
   .division-text h2,
   .industires .text-center h2,
