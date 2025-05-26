@@ -285,24 +285,50 @@ body {
   font-weight: 500;
   color: var(--main-color-3);
 }
-
+/* .mySwiper .swiper-slide .slide-text{
+  word-wrap: break-word;
+} */
 .mySwiper .swiper-slide .slide-text h1 {
   font-size: 165px;
   font-weight: 340;
   margin-top: 50px;
-  width:100%;
+  width: 100%;
   margin: 0px !important;
   padding: 0px !important;
   color: #000000;
   overflow: hidden;
 }
-.mySwiper .swiper-slide .slide-text p {
+
+.mySwiper .swiper-slide .slide-text h1 span {
   font-weight: 600;
   margin: 0px !important;
   padding: 0px !important;
   font-size: 165px;
   color: #915D3D;
 }
+
+/* ✅ Responsive adjustments */
+@media (max-width: 1200px) {
+  .mySwiper .swiper-slide .slide-text h1,
+  .mySwiper .swiper-slide .slide-text h1 span {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mySwiper .swiper-slide .slide-text h1,
+  .mySwiper .swiper-slide .slide-text h1 span {
+    font-size: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .mySwiper .swiper-slide .slide-text h1,
+  .mySwiper .swiper-slide .slide-text h1 span {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
 
 button.slick-disabled {
   opacity: 0.5;
@@ -408,58 +434,48 @@ button.slick-disabled {
 } */
 
 /* section division end */
-/* section industries */
+/* section Benefits */
 
-.bg-bank {
+.bg-fuel {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/bank.jpg") no-repeat center center;
+    url("../images/benefits/fuel.png") no-repeat center center;
   background-size: cover;
-  height: 200px;
-}
-.bg-medical {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/medical.jpg") no-repeat center center;
-  background-size: cover;
-  height: 200px;
-}
-.bg-govt {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/govt.jpg") no-repeat center center;
-  background-size: cover;
-  height: 200px;
+  height: 270px;
 }
 
-.bg-law {
+.bg-environmnt {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/law.jpg") no-repeat center center;
+    url("../images/benefits/enviromment.jpg") no-repeat center center;
   background-size: cover;
-  height: 200px;
+  height: 270px;
 }
-.bg-defence {
+.bg-money {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/defence.jpg") no-repeat center center;
+    url("../images/benefits/money.jpg") no-repeat center center;
   background-size: cover;
-  height: 200px;
-}
-
-.bg-education {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/education.jpg") no-repeat center center;
-  background-size: cover;
-  height: 200px;
+  height: 270px;
 }
 .industires .col-md-4 .box {
   padding: 0px 10px;
-  display: flex;
+  display: grid;
   align-items: flex-end;
 }
 .industires .col-md-4 .box h1 {
   color: var(--main-color-3);
-  font-size: 20px;
+  font-size: 35px;
   font-weight: 500;
   text-align: start;
+  padding: 15px;
 }
-
+.industires .col-md-4 p {
+  color: white;
+  display: none;
+}
+.industries .col-md-4:hover p {
+  color: white;
+  visibility: visible;
+  opacity: 1;
+}
 .industires .industries-text {
   font-size: 24px;
   font-weight: 400;
@@ -468,15 +484,15 @@ button.slick-disabled {
   color: var(--text-color);
 }
 .industires .industries-text-main {
-  font-size: 68px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0px;
 }
-/* section industries end */
+/* section benefits end */
 
-/* Counter Section Start */
-.counter .main-counter h1 {
+/* fusion Section Start */
+.fusion .main-fusion h1 {
   font-size: 24px;
   font-weight: 400;
   line-height: 100%;
@@ -484,143 +500,184 @@ button.slick-disabled {
   text-align: center;
   color: var(--text-color);
 }
-.counter .main-counter h2 {
-  font-size: 68px;
+.fusion .main-fusion h2 {
+  font-size: 74px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0px;
   text-align: center;
+  margin-bottom: 40px;
 }
-.counter-box {
-  margin-top: 50px;
+.fusion-box {
+  margin-top: 10px;
 }
-.counter-box h1 {
-  font-size: 96px;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0px;
-  text-align: center;
-  font-family: var(--main-three-font-family);
+.fusion .col-md-3 .box{
+    padding: 10px;
+    display: grid;
+    background: #915D3D;
+    color: wheat;
+    height: 80px;
 }
-.counter-box p {
-  font-size: 32px;
-  font-weight: 400;
-  text-align: center;
-  color: var(--text-color);
-  font-family: var(--main-three-font-family);
+.fusion-box h3{
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
 }
-
-/* Counter Section End */
-
-/* Partner Section Start */
-.bg-partner {
-  background: rgba(125, 125, 125, 0.2);
-}
-.slick-slider2 .slick-prev,
-.slick-slider2 .slick-next {
-  display: none !important;
-}
-.slick-slider2 {
-  max-height: 70px;
-}
-.partner-box {
-  min-width: 200px !important;
-  height: 60px !important;
-  align-items: center;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-.partner-box img {
-  width: 50%;
-  aspect-ratio: 3/2;
-  object-fit: contain;
+.fusion-box h4{
+  color: white;
+  font-size: 22px;
+  font-weight: 105px;
 }
 
-/* Team Section Start */
-.team-section .team-text h3 {
-  font-size: 48px;
+
+/* fusion Section End */
+
+/* Home About Section Start */
+.home-about .home-about-text {
+  font-size: 24px;
   font-weight: 400;
   line-height: 100%;
-  letter-spacing: 0px;
-  text-align: center;
-  font-family: var(--main-two-font-family);
-}
-.card-without-nothing .image-team img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.team-designations {
-  text-align: center;
-}
-.team-designations h5 {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: var(--main-two-font-family);
-  line-height: 100%;
-  letter-spacing: 0px;
-}
-.team-designations p {
-  font-size: 17px;
-  font-weight: 300;
-  font-family: var(--main-two-font-family);
-  margin-top: 4px;
   letter-spacing: 0px;
   color: var(--text-color);
 }
-
-.team-swiper .swiper-slide {
-  height: 380px;
+.home-about .home-about-text-main {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
 }
-.team-swiper .image-team {
-  width: 95%;
-}
-
-.team-swiper .slick-prev {
-  position: absolute;
-  top: 0;
-  left: 93%;
-  font-size: 40px;
-  margin-top: -35px;
-  height: 40px;
-  width: 40px;
-
-  font-family: "Font Awesome 5 Free";
-}
-.team-swiper .slick-prev::before,
-.team-swiper .slick-next::before {
-  font-size: 40px;
-  content: "";
-}
-.team-swiper .slick-next {
-  position: absolute;
-  top: 0;
-  font-size: 40px;
-  margin-top: -35px;
-  height: 40px;
-  width: 40px;
-  font-family: "Font Awesome 5 Free";
-  right: 0%;
-  text-align: end;
-
-  font-family: "Font Awesome 5 Free";
-}
-.team-swiper .slick-prev i,
-.team-swiper .slick-next i {
-  font-size: 40px;
-  color: var(--main-color-2);
-}
-.simple-btn {
-  color: var(--main-color-2);
+.home-about .description{
+  text-align: justify;
+  color: black;
   font-size: 16px;
-  font-family: var(--main-two-font-family);
-  text-align: center;
-  text-decoration: none;
-  font-weight: 300;
-  transition: all 0.5s ease;
-  cursor: pointer;
 }
+/* Home About Section End */
+
+/* Choose Section Start */
+.choose .choose-text-main {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.choose .choose-text-main span{
+  color: #915D3D;
+}
+
+.choose .bullets-section h3{
+  font-size: 22px;
+}
+.choose .bullets-section h4{
+  font-size: 20px;
+}
+.choose .image-sction{
+  text-align: right;
+  padding: 0px;
+}
+/* Choose Section End */
+
+
+.efficiency .efficiency-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--text-color);
+}
+.efficiency .efficiency-text-main {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.efficiency ul li{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--text-color);
+}
+.efficiency .bullets {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+
+.efficiency .bullets li {
+    margin-right: 2rem;          /* adds spacing between items */
+  }
+
+.efficiency .bullets.d-flex li::marker {
+    font-size: 2rem;           /* bigger bullets if needed */
+    color: #007bff;              /* optional: color */
+}
+.efficiency .container-fluid{
+    background:url("../images/efficiency.png") no-repeat center center;
+    background-size: cover;
+    height:570px;
+}
+/* Smart Move Section Start */
+
+ 
+
+.smart-move .smart-move-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--text-color);
+}
+.smart-move .smart-move-text-main {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.smart-move .smart-move-text-main span{
+  color: #915D3D;
+}
+.smart-move .bullets-section h3{
+  font-size: 22px;
+}
+.smart-move .bullets-section h4{
+  font-size: 18px;
+}
+.smart-move .image-sction{
+  text-align: right;
+  padding: 0px;
+}
+/* Smart Move Section End */
+
+/* Advantage Section Start */
+.advantage .advantage-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--text-color);
+}
+.advantage .advantage-text span{
+  color: #915D3D;
+}
+.advantage .advantage-text-main {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.advantage .brief{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--text-color);
+
+}
+.advantage .brief p{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* Advantage Section End */
+
 .simple-btn:hover,
 .simple-btn:focus {
   color: var(--main-color-2);
@@ -1547,32 +1604,8 @@ label{
   .team-swiper .slick-next i {
     font-size: 20px !important;
   }
-  .mySwiper .swiper-slide,
-  .mySwiper {
-    height: 600px !important;
-  }
-  .mySwiper .swiper-pagination {
-    margin-bottom: 20px;
-  }
-  .mySwiper .swiper-pagination-bullet {
-    width: 40px;
-    margin: 0px 5px !important;
-  }
-  .mySwiper .swiper-pagination-bullet .buttet-text {
-    display: none;
-  }
-  .division-text h2,
-  .industires .text-center h2,
-  .main-counter h2,
-  h2.insight-text,
-  .location h3,
-  .counter-box h1 {
-    font-size: 35px !important;
-  }
-  .division-text p,
-  .counter-box p {
-    font-size: 16px;
-  }
+
+
   .industires {
     padding: 20px !important;
     text-align: justify;
