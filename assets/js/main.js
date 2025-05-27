@@ -254,7 +254,7 @@ $(window).on("scroll", function () {
       logo.attr("src", "assets/images/logo-black.png");
       $("#mobile-logo").attr("src", "assets/images/logo-black.png");
 
-      header.find("ul li a.nav-link").css("color", "#fff");
+      header.find("ul li a.nav-link").css("color", "#000");
       header.find(".line").css("stroke", "#fff");
       header.find("ul.bordered").css("border-color", "#fff");
       header.find(".btn-main").removeClass("btn-black");

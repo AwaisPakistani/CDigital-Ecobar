@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#003366" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Ecobar
+    </title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="./assets/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/lib/slick-1.8.1/slick/slick.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./assets/lib/slick-1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./assets/lib/animate/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header section starts -->
+    <header>
+       <nav class="navbar navbar-expand-lg position-absolute" id="navbarchange">
+        <div class="container my-md-1">
+          <button
+            class="navbar-toggler"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg width="50" height="50" viewBox="0 0 100 100">
+              <path
+                class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+              />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path
+                class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+              />
+            </svg>
+            <!-- </button> -->
+          </button>
+          <div class="mobile-menu">
+            <a class="navbar-brand" href="./index.html">
+              <img
+                id="mobile-logo"
+                src="./assets/images/logo-black.png"
+                alt=""
+              />
+            </a>
+           
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <a class="navbar-brand" href="./index.html">
+              <img id="logo" src="./assets/images/logo-black.png" alt="" />
+            </a>
+            <ul
+              class="navbar-nav w-100 my-2 px-4 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+                <ul class="d-flex justify-content-center w-100 navbar-nav fs-5">
+                    <li class="nav-item px-5">
+                        <a class="nav-link active" href="index.html" role="button" aria-expanded="false">
+                        What is Ecobar
+                        </a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link" href="product_detail.html" role="button" aria-expanded="false">
+                        Product Details
+                        </a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link" href="about.html" role="button" aria-expanded="false">
+                        About Us
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+
+            <div class="contact-btn">
+              <a href="contact.html" class="btn-main d-sm-none-btn"
+                >Contact</a
+              >
+            </div>
+          </div>
+
+        
+        </div>
+      </nav>
+    
+       <section class="banner" id="banner">
+        <div class="container-fluid  px-0"> 
+          <div class="swiper productSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row align-items-center">
+                  <div class="col-lg-12">
+                    <div class="slide-text">
+                      <h1 class="mb-2">The Smart Upgrade for Your Engine</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </header>
+  <!--Slider Engineered Section Start-->
+
+  <section class="engineered">
+       <div class="container">
+           <div class="row my-4">
+            <div class="col-md-12">
+                <h1><span>Engineered for</span> Efficiency </h1>
+            </div>
+           </div>
+            <div id="customCarousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6 content-item">
+                            <h2>What it is made of</h2>
+                            <h3 class="mt-2">Ecobar is ionizing ceramic made of 37 kinds of special inorganic Minerals.</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/images/productPage/slider1.png" class="d-block w-100" alt="Slide 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-md-6 content-item">
+                             <h2>Advanced Fuel-Air Activation </h2>
+                            <h3 class="mt-2">Ecobar is ionizing ceramic made of 37 kinds of special inorganic Minerals.</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://picsum.photos/id/1016/800/400" class="d-block w-100" alt="Slide 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-md-6 content-item">
+                            <h2>Maximizing Engine Output</h2>
+                            <h3 class="mt-2">Ecobar is ionizing ceramic made of 37 kinds of special inorganic Minerals.</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://picsum.photos/id/1018/800/400" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Custom Bullets -->
+                <div class="carousel-indicators my-5 pt-5">
+                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+       </div>
+  </section>
+
+  <!--Slider Engineered Section End-->
+
+    <!--Smart Move Section Start-->
+    <section class="smart-move my-5">
+     <div class="container">
+       <div class="row">
+              <div class="col-md-6 ml-5 mt-5">
+                 <h2 class="smart-move-text-main"><span>Optimize</span> Your Drive</h2>
+                  <div class="bullets-section my-3">
+                    <h3>Better Fuel Atomization</h3>
+                    <h4 class="mt-2">EcoBar enhances fuel breakdown, allowing better mixing with air for more efficient combustion—delivering more power while using less fuel.</h4>
+                  </div>
+                  <div class="bullets-section mb-3">
+                    <h3>Cleaner Combustion</h3>
+                    <h4 class="mt-2">EcoBar ensures a more complete burn, reducing unburnt fuel in the exhaust. This lowers emissions and helps keep the engine cleaner over time.</h4>
+                  </div>
+                  <div class="bullets-section mb-3">
+                    <h3>Reduced Carbon Deposits</h3>
+                    <h4 class="mt-2">A cleaner burn reduces carbon buildup, maintaining performance and extending the lifespan of engine parts.</h4>
+                  </div>
+                  <div class="bullets-section mb-3">
+                    <h3>Enhanced Thermal Stability</h3>
+                    <h4 class="mt-2">EcoBar's ceramic composition improves thermal regulation, stabilizing temperatures and reducing the risk of engine knocking or overheating.</h4>
+                  </div>
+                  <div class="bullets-section mb-3">
+                    <h3>Long-Term Efficiency</h3>
+                    <h4 class="mt-2">EcoBar's ceramic composition enhances thermal regulation, stabilizing temperatures and preventing engine knocking or overheating.</h4>
+                  </div>
+              </div>
+              <div class="col-md-6 mt-1">
+                  <div class="image-sction">
+                    <img src="assets/images/product_optimize.png" class="img-fluid">
+                  </div>
+              </div>
+       </div>
+     </div>
+
+   </section>
+   <!--Smart Move Section End-->
+   <!-- Efficiency section start-->
+   <section class="efficiency">
+       <div class="container">
+          <div class="row">
+                 <div class="col-md-12 text-start">
+                    <h2 class="efficiency-text-main">Effortless Efficiency in Three Steps</h2>
+                    <ul class="d-flex gap-4 my-5 bullets">
+                      <li>Put in fuel tank of the vehicle</li>
+                      <li>Let it remain dip in fuel for 4 hours</li>
+                      <li>Effective offer 100km or drive for 4 hours</li>
+                    </ul>
+                </div>
+           
+          </div>
+       </div>
+       <div class="container-fluid">
+          <div class="efficiency-image"></div>
+       </div>
+
+   </section>
+   <!-- Efficiency section end-->
+    <!-- Optimize Section Start -->
+    <section class="p-5 industires">
+        <div class="container">
+            <div class="row pt-5">
+            <div class="col-md-12 mb-5 text-start">
+                <h2 class="industries-text-main"><span style="color: #915D3D;">See</span> The Difference</h2>
+                <h1 class="industries-text mt-3">EcoBar brings a noticeable shift in how your engine performs. Here's a quick look at the difference it makes.</h1>
+            </div>
+            <div class="col-md-6 p-1">
+                <div class="box bg-fuel">
+                <div class="box-content">
+                    <h1 class="text-white">Before</h1>
+                    <p class="box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-1">
+                <div class="box bg-environmnt">
+                <div class="box-content">
+                    <h1 class="text-white">After</h1>
+                    <p class="box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Optimize Section End-->
+     <!-- Benefits Section Start -->
+    <section class="p-5 usage">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-md-12 mb-5 text-start">
+            <h2 class="usage-text-main"><span>How to Use</span> Ecobar</h2>
+            <h1 class="usage-text mt-3">EcoBar brings a noticeable shift in how your engine performs. Here's a quick look at the difference it makes.</h1>
+           
+          </div>
+          <div class="col-md-4 p-1">
+            <div class="content text-center">
+                <img src="assets/images/productPage/use1.png" class="img-fluid">
+                <h1 class="text-main mt-4">2EA</h1>
+                <p class="box-description">2 Stroke Engine/For Motorcycle</p>
+            </div>
+          </div>
+          <div class="col-md-4 p-1">
+                <div class="content text-center">     
+                    <img src="assets/images/productPage/use3.png" class="img-fluid">
+                     <h1 class="text-main mt-4">5EA</h1>
+                      <p class="box-description mt-3">4 Stroke Engine/For Sedan</p>
+                </div>
+          </div>
+          <div class="col-md-4 p-1">
+               <div class="content text-center">
+                   <img src="assets/images/productPage/use2.png" class="img-fluid">
+                    <h1 class="text-main mt-4">10EA</h1>
+                     <p class="box-description">For Large Vehicles and small vessels</p>
+               </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    <!-- Benefits Section End -->
+     <!--technical Section Start -->
+    <section class="technical">
+    <div class="container">
+        <div class="row my-4">
+        <div class="col-md-12">
+            <h1 class="technical-text-main"><span>Technical </span>Details</h1>
+        </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-md-6 heading" >Specification</div>
+            <div class="col-md-6 heading" >Values</div>
+
+            <div class="col-md-6 item" >Package Dimensions</div>
+            <div class="col-md-6 item" >15x10.9x1.3cm</div>
+    
+            <div class="col-md-6 item" >Weight</div>
+            <div class="col-md-6 item" >110 g</div>
+    
+            <div class="col-md-6 item" >Outer Meterial</div>
+            <div class="col-md-6 item" >Ceramic</div>
+    
+            <div class="col-md-6 item" >Raw Meterial</div>
+            <div class="col-md-6 item" >37 Inorganic Minerals</div>
+    
+            <div class="col-md-6 item" >Color</div>
+            <div class="col-md-6 item" >Brown</div>
+    
+            <div class="col-md-6 item" >Used in</div>
+            <div class="col-md-6 item" >internal Combustion Engine</div>
+
+            <div class="col-md-6 item" >Manufactured in</div>
+            <div class="col-md-6 item" >South Korea</div>
+        </div>
+        <!-- <div class="row ustify-content-between">
+            
+        </div> -->
+
+
+        
+    </div>
+    </section>
+    <!--technical Section End -->
+
+
+    <footer class="mt-5">
+        <section class="footer-section mb-3">
+            <div class="container">
+            <div class="row py-5">
+                <div class="col-md-12">
+                <div class="">
+                    <h3 class="text-white fs-8">Get in Touch With Us</h3>
+                    <p class="text-white">
+                    Have questions or need assistance? Reach out to us
+                    <a href="/contact-us.html" class="text-white"
+                        ><i class="fa fa-arrow-right ms-2"></i
+                    ></a>
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="mt-3 mb-3 footer-bottom">
+            <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8">
+                    <div
+                        class="footer-list d-flex justify-content-between text-main"
+                        >
+                        <ul>
+                        <li><a href="/terms.html">Terms of Use</a></li>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-icon-list mt-2 mb-3">
+                        <a href="#" class="footer-icon"
+                        ><i class="fa fa-linkedin"></i
+                        ></a>
+                        <a href="#" class="footer-icon"
+                        >
+                        <i class="fa fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="footer-icon"
+                        ><i class="fa fa-instagram"></i
+                        ></a>
+                    <a href="#" class="footer-icon">
+                        <i class="fa fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-6 text-end">
+                <p class="fs-12 mt-3">
+                    © Copyrights CDigital Global 2025. All rights reserved
+                </p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./assets/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/lib/jquery/jquery.min.js"></script>
+    <script src="./assets/lib/fontawesome/fontawesome.js"></script>
+    <script src="./assets/lib/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

@@ -426,6 +426,7 @@ button.slick-disabled {
   to {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    visibility: visible;
   }
 }
 /* .animate__slideInDown {
@@ -455,26 +456,47 @@ button.slick-disabled {
   background-size: cover;
   height: 270px;
 }
-.industires .col-md-4 .box {
-  padding: 0px 10px;
-  display: grid;
-  align-items: flex-end;
+.industries .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content to the bottom */
+  height: 100%;              /* Ensure it fills the column */
+  padding: 0 10px;
+  position: relative;
 }
-.industires .col-md-4 .box h1 {
+
+.industries .box h1 {
+  margin-bottom: 0.3rem; /* Adjust spacing as needed */
+}
+.industires .box h1 {
   color: var(--main-color-3);
   font-size: 35px;
   font-weight: 500;
   text-align: start;
   padding: 15px;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
 }
-.industires .col-md-4 p {
-  color: white;
-  display: none;
+.box-content{
+  position: relative;
 }
-.industries .col-md-4:hover p {
-  color: white;
+.box p {
+  position: absolute;
+    transform: translateY(50px);
+    visibility: hidden;
+    padding: 0px 15px;
+    color: transparent;
+    transition: all 0.5s ease !important;
+}
+.box:hover p {
+  position: relative;
+  transform: translateY(0px);
   visibility: visible;
-  opacity: 1;
+  color: white;
+  
+}
+.box:hover h1{
+    transform: translateY(-10px) !important;
 }
 .industires .industries-text {
   font-size: 24px;
@@ -488,6 +510,13 @@ button.slick-disabled {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0px;
+}
+.industires .box-content{
+  display: grid;
+    min-height: 270px;
+    align-items: end;
+    align-content: end;
+
 }
 /* section benefits end */
 
@@ -645,6 +674,9 @@ button.slick-disabled {
   text-align: right;
   padding: 0px;
 }
+.smart-move .bullets-section h3,h4{
+  color: black;
+}
 /* Smart Move Section End */
 
 /* Advantage Section Start */
@@ -677,6 +709,188 @@ button.slick-disabled {
   padding-bottom: 5px;
 }
 /* Advantage Section End */
+
+
+/* Product Page Started */
+/* Hero Section Started */
+.productSwiper {
+  width: 100vw; /* Full viewport width */
+  height: 600px;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url("../images/product_hero.png") no-repeat center center;
+  background-size: cover; /* This is key */
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  margin: 0;
+}
+.productSwiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  opacity: 1 !important;
+  /* margin-top: 100px; */
+}
+.productSwiper .swiper-slide .slide-text {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3); /* optional overlay */
+  color: white;
+  padding: 0 15px;
+  margin:200px 200px;
+}
+.productSwiper .swiper-slide .slide-text h1{
+    font-size: 105px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+@media (max-width: 1200px) {
+  .productSwiper .swiper-slide .slide-text h1 {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .productSwiper .swiper-slide .slide-text h1 {
+    font-size: 9vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .productSwiper .swiper-slide .slide-text h1 {
+    font-size: 11vw;
+  }
+}
+
+/* Hero Section End*/
+
+/*Usage*/
+.usage .usage-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--text-color);
+}
+.usage .usage-text-main span{
+  color: #915D3D;
+}
+.usage .usage-text-main {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+
+/* Technical */
+.technical h1{
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.technical h1 span{
+  color: #915D3D;
+}
+
+.technical .heading {
+  background-color: #915D3D;
+  color: white;
+  padding: 1rem;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.technical .item {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  font-size: 22px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border: 1px solid #ddd;
+  
+  margin-bottom: 20px;
+}
+.technical .row .heading,.item{
+  max-width: 49%;
+}
+
+
+/* Slider Enginnered section */
+.engineered{
+  margin: 80px 0px 100px 0px;
+}
+.engineered h1{
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.engineered h1 span{
+  color: #915D3D;
+}
+
+
+/* Slider */
+
+ .engineered .carousel-indicators {
+      bottom: -85px; /* Move bullets below the carousel */
+ }
+
+ .engineered .carousel-indicators [data-bs-target] {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #333;
+      opacity: 0.5;
+      transition: opacity 0.3s, transform 0.3s;
+}
+
+.engineered .carousel-indicators .active {
+      background-color: #915D3D;
+      opacity: 1;
+      transform: scale(1.2);
+}
+
+.engineered .carousel-inner img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+}
+
+.engineered .carousel-item .row {
+  height: 100%; /* Full height of carousel-item */
+  align-items: center; /* Vertically center content */
+}
+
+.engineered .carousel-item {
+  min-height: 400px; /* Set a fixed height or adjust as needed */
+  
+}
+
+.engineered .content-item {
+  padding: 20px;
+}
+.engineered .content-item  h2{
+  color: #915D3D;
+  font-weight: bold;
+  font-size: 45px;
+}
+.engineered .content-item  h3{
+  font-size: 32px;
+  color: black;
+}
+/* .engineered .engineered .carousel-item .content-item{
+
+} */
 
 .simple-btn:hover,
 .simple-btn:focus {
