@@ -44,12 +44,68 @@ body {
   box-sizing: border-box; */
   /* line-height: 0 !important; */
 }
+.contact-section .contact-form 
+input{
+  background-color: #F7F7F7;
+  min-height: 60px;
+  border: 0px;
+}
+.contact-section .contact-form 
+textarea{
+  background-color: #F7F7F7;
+  border: 0px;
+}
+.btn-custom {
+  background-color: #915D3D;
+  color: #fff;
+  min-height: 60px;
+  border: none;
+  font-size: 25px;
+}
+.contact-form {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.contact-section .text-main{
+  font-size: 70px;
+  color: #915D3D;
+  font-weight: bolder;
+  /* word-break: break-all; */
+}
+.contact-section .brief{
+  font-size: 22px;
+  /* word-break: break-all; */
+}
+.contact-section .bullets .item{
+  margin-top: 50px;
+}
+.contact-section .bullets .item .text-bullet-main{
+  font-size: 32px;
+  color: #915D3D;
+  font-weight: 70px;
+}
+.contact-section .bullets .item .text-bullet-value{
+  font-size: 18px;
+}
+.contact-section .bullets .item .text-bullet-value a{
+  display: block;
+  margin-bottom: 15px;
+}
+.footer-bottom hr {
+  border: 0;
+  height: 3px; /* Thickness */
+  background-color: brown; /* Brown color */
+  margin: 20px 0; /* Optional spacing */
+}
+
 .contact-btn .btn-main{
   color: white !important;
   background: #000;
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 
 .text-main {
   color: var(--main-color);
@@ -583,6 +639,9 @@ button.slick-disabled {
 /* Home About Section End */
 
 /* Choose Section Start */
+.choose .text-start{
+  margin-top: 100px;
+}
 .choose .choose-text-main {
   font-size: 50px;
   font-weight: 700;
@@ -599,8 +658,8 @@ button.slick-disabled {
 .choose .bullets-section h4{
   font-size: 20px;
 }
+
 .choose .image-sction{
-  text-align: right;
   padding: 0px;
 }
 /* Choose Section End */
@@ -614,6 +673,13 @@ button.slick-disabled {
   color: var(--text-color);
 }
 .efficiency .efficiency-text-main {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.efficiency .efficiency-text-main span{
+  color: #915D3D;
   font-size: 50px;
   font-weight: 700;
   line-height: 100%;
@@ -906,6 +972,90 @@ button.slick-disabled {
   font-size: 11px;
   line-height: 150%;
 }
+
+
+
+
+/* Product Page Started */
+/* Hero Section Started */
+.aboutSwiper {
+  width: 100vw; /* Full viewport width */
+  height: 600px;
+  background-size: cover; /* This is key */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0;
+}
+.aboutSwiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  opacity: 1 !important;
+}
+.aboutSwiper .swiper-slide .slide-text {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: black;
+  padding: 0 15px;
+  margin:150px 0px;
+}
+.aboutSwiper .swiper-slide .slide-text h1{
+    font-size: 105px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+.aboutSwiper .swiper-slide .slide-text h1 span{
+  color: #915D3D;
+}
+
+@media (max-width: 1200px) {
+  .aboutSwiper .swiper-slide .slide-text h1 {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutSwiper .swiper-slide .slide-text h1 {
+    font-size: 9vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutSwiper .swiper-slide .slide-text h1 {
+    font-size: 11vw;
+  }
+}
+
+/* Testimonial Section Start*/
+.testimonial{
+  background-color: #915D3D;
+  color: white;
+}
+.testimonial .section-one{
+  font-size: 40px;
+}
+
+.testimonial .section-two h1{
+  font-size: 50px;
+}
+.testimonial .section-two span{
+  font-size: 30px;
+}
+.testimonial .section-two hr{
+  font-weight: bold;
+  color: white;
+  width: 20%;
+}
+.testimonial .section-two .close-inverted{
+  /* color: brown; */
+  font-size: 100px;
+}
+/* Testimonial Section End*/
+
+
 
 /* Team Section End*/
 
@@ -1497,7 +1647,7 @@ span.plus {
 }
 .footer-section {
   background-color: #915D3D;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 .footer-section h3 {
   font-size: 68px;
