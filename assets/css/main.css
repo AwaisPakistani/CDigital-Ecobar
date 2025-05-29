@@ -64,7 +64,7 @@ textarea{
 }
 .btn-custom:hover {
   background: var(--main-color-2);
-  border: 1px solid var(--main-color-3);
+  border: 1px solid #915D3D;
   color: var(--main-color-3);
   min-height: 60px;
   font-size: 25px;
@@ -226,7 +226,7 @@ textarea{
 }
 .btn-main:hover {
   background: var(--main-color-2);
-  border: 1px solid var(--main-color-3);
+  border: 1px solid #915D3D;
   color: var(--main-color-3);
 }
 .btn-black {
@@ -587,6 +587,9 @@ button.slick-disabled {
   line-height: 100%;
   letter-spacing: 0px;
 }
+.industires .industries-text-main span{
+  color: #915D3D;
+}
 .industires .box-content{
   display: grid;
     min-height: 270px;
@@ -788,6 +791,9 @@ button.slick-disabled {
   color: black;
 }
 .advantage .advantage-text span{
+  color: #915D3D;
+}
+.advantage .advantage-text-main span{
   color: #915D3D;
 }
 .advantage .advantage-text-main {
@@ -1801,7 +1807,7 @@ span.plus {
   width: 100%;
   bottom: 0px;
   height: 3px;
-  background: var(--main-color-2);
+  background: #915D3D;
 }
 .box-main .box {
   content: "";
