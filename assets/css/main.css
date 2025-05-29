@@ -13,10 +13,10 @@
 
   --main-color-3: #fff;
   --main-color-4: transparent;
-  --main-font-family: ;
-  --main-two-font-family: "Montserrat", sans-serif;
+  --main-font-family: "Poppins", sans-serif;
+  --main-two-font-family: "Poppins", sans-serif;
   --main-three-font-family: "Poppins", sans-serif;
-  --text-color: #7d7d7d;
+  --text-color: #915D3D;
 }
 
 h2,
@@ -62,19 +62,29 @@ textarea{
   border: none;
   font-size: 25px;
 }
+.btn-custom:hover {
+  background: var(--main-color-2);
+  border: 1px solid var(--main-color-3);
+  color: var(--main-color-3);
+  min-height: 60px;
+  font-size: 25px;
+}
 .contact-form {
   border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 .contact-section .text-main{
-  font-size: 70px;
+  font-size: 64px;
+
   color: #915D3D;
-  font-weight: bolder;
+  font-weight: 700;
+  font-family: var(--main-font-family);
   /* word-break: break-all; */
 }
 .contact-section .brief{
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: (--main-font-family);
   /* word-break: break-all; */
 }
 .contact-section .bullets .item{
@@ -83,13 +93,19 @@ textarea{
 .contact-section .bullets .item .text-bullet-main{
   font-size: 32px;
   color: #915D3D;
-  font-weight: 70px;
+  font-weight: 400;
+  font-family: (--main-font-family);
 }
 .contact-section .bullets .item .text-bullet-value{
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: (--main-font-family);
 }
 .contact-section .bullets .item .text-bullet-value a{
   display: block;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
   margin-bottom: 15px;
 }
 .footer-bottom hr {
@@ -101,7 +117,7 @@ textarea{
 
 .contact-btn .btn-main{
   color: white !important;
-  background: #000;
+  background: #915D3D;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -209,9 +225,9 @@ textarea{
   text-decoration: none;
 }
 .btn-main:hover {
-  background: var(--main-color-3);
+  background: var(--main-color-2);
   border: 1px solid var(--main-color-3);
-  color: var(--main-color-2);
+  color: var(--main-color-3);
 }
 .btn-black {
   border-color: var(--main-color-2);
@@ -327,6 +343,7 @@ textarea{
   background: var(--main-color-4);
   height: 100%;
   text-align: start;
+  letter-spacing: 0%;
 }
 .banner-division-text {
   display: grid;
@@ -345,6 +362,7 @@ textarea{
   word-wrap: break-word;
 } */
 .mySwiper .swiper-slide .slide-text h1 {
+  font-family: var(--main-font-family);
   font-size: 165px;
   font-weight: 340;
   margin-top: 50px;
@@ -356,6 +374,7 @@ textarea{
 }
 
 .mySwiper .swiper-slide .slide-text h1 span {
+  font-family: var(--main-font-family);
   font-weight: 600;
   margin: 0px !important;
   padding: 0px !important;
@@ -382,6 +401,7 @@ textarea{
   .mySwiper .swiper-slide .slide-text h1 span {
     font-size: 40px;
     text-align: center;
+    margin-bottom: 50px !important;
   }
 }
 
@@ -620,21 +640,25 @@ button.slick-disabled {
 /* Home About Section Start */
 .home-about .home-about-text {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 100%;
   letter-spacing: 0px;
   color: var(--text-color);
+  font-family: var(--main-font-family);
 }
 .home-about .home-about-text-main {
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0px;
+  font-family: var(--main-font-family);
 }
 .home-about .description{
   text-align: justify;
   color: black;
   font-size: 16px;
+  font-weight: 400;
+  font-family: var(--main-font-family);
 }
 /* Home About Section End */
 
@@ -643,8 +667,9 @@ button.slick-disabled {
   margin-top: 100px;
 }
 .choose .choose-text-main {
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700;
+  font-weight: "Poppins";
   line-height: 100%;
   letter-spacing: 0px;
 }
@@ -653,10 +678,15 @@ button.slick-disabled {
 }
 
 .choose .bullets-section h3{
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--main-font-family);
+  color: #915D3D;
 }
 .choose .bullets-section h4{
   font-size: 20px;
+  font-weight: 400;
+  font-family: var(--main-font-family);
 }
 
 .choose .image-sction{
@@ -690,7 +720,7 @@ button.slick-disabled {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0px;
-  color: var(--text-color);
+  color: black;
 }
 .efficiency .bullets {
     list-style: disc;
@@ -731,10 +761,14 @@ button.slick-disabled {
   color: #915D3D;
 }
 .smart-move .bullets-section h3{
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--main-font-family);
+  color: #915D3D;
 }
 .smart-move .bullets-section h4{
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
 }
 .smart-move .image-sction{
   text-align: right;
@@ -751,23 +785,24 @@ button.slick-disabled {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0px;
-  color: var(--text-color);
+  color: black;
 }
 .advantage .advantage-text span{
   color: #915D3D;
 }
 .advantage .advantage-text-main {
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0px;
+  font-family: var(--main-font-family);
 }
 .advantage .brief{
   font-size: 20px;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0px;
-  color: var(--text-color);
+  color: #915D3D;
 
 }
 .advantage .brief p{
@@ -799,9 +834,11 @@ button.slick-disabled {
   /* margin-top: 100px; */
 }
 .productSwiper .swiper-slide .slide-text {
- display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 300;
+  font-family: var(--main-font-family);
   height: 100%;
   text-align: center;
   background: rgba(0, 0, 0, 0.3); /* optional overlay */
@@ -811,7 +848,7 @@ button.slick-disabled {
 }
 .productSwiper .swiper-slide .slide-text h1{
     font-size: 105px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--main-font-family);
 } 
 
 @media (max-width: 1200px) {
@@ -846,19 +883,26 @@ button.slick-disabled {
   color: #915D3D;
 }
 .usage .usage-text-main {
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0px;
+  font-family: var(--main-font-family);
 }
+.usage .content .text-heading {
+  color: #915D3D;
+  font-family: var(--main-font-family);
+}
+
 
 
 /* Technical */
 .technical h1{
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0px;
+  font-family: var(--main-font-family);
 }
 .technical h1 span{
   color: #915D3D;
@@ -868,21 +912,21 @@ button.slick-disabled {
   background-color: #915D3D;
   color: white;
   padding: 1rem;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-family: var(--main-font-family);
 }
 
 .technical .item {
   background-color: white;
-  color: black;
+  color: #915D3D;
   padding: 1rem;
   font-size: 22px;
   text-align: center;
   border-top: 1px solid #ddd;
   border: 1px solid #ddd;
-  
   margin-bottom: 20px;
 }
 .technical .row .heading,.item{
@@ -895,10 +939,11 @@ button.slick-disabled {
   margin: 80px 0px 100px 0px;
 }
 .engineered h1{
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0px;
+  font-family: var(--main-font-family);
 }
 .engineered h1 span{
   color: #915D3D;
@@ -947,11 +992,12 @@ button.slick-disabled {
 }
 .engineered .content-item  h2{
   color: #915D3D;
-  font-weight: bold;
-  font-size: 45px;
+  font-weight: 500;
+  font-size:36px;
 }
 .engineered .content-item  h3{
-  font-size: 32px;
+  font-size: 24px;
+  font-weight: 400;
   color: black;
 }
 /* .engineered .engineered .carousel-item .content-item{
@@ -994,7 +1040,7 @@ button.slick-disabled {
   opacity: 1 !important;
 }
 .aboutSwiper .swiper-slide .slide-text {
- display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -1004,8 +1050,9 @@ button.slick-disabled {
   margin:150px 0px;
 }
 .aboutSwiper .swiper-slide .slide-text h1{
-    font-size: 105px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 96px; 
+    font-weight: 300;
+    font-family: var(--main-font-family);
 } 
 .aboutSwiper .swiper-slide .slide-text h1 span{
   color: #915D3D;
@@ -1040,7 +1087,15 @@ button.slick-disabled {
 
 
 .testimonial .section-two h1{
-  font-size: 50px;
+  font-size: 46px;
+  font-weight: 600;
+  font-family: var(--main-font-family);
+}
+.testimonial .section-two p{
+  font-size: 20px;
+  font-weight: 400;
+  color: #EAAAEA;
+  font-family: var(--main-font-family);
 }
 .testimonial .section-two span{
   font-size: 30px;
@@ -1055,7 +1110,10 @@ button.slick-disabled {
 .testimonial .section-two hr{
   font-weight: bold;
   color: white;
-  width: 20%;
+  width: 120px;
+  top: 243px;
+  left: 1077px;
+  border: 2px;
 }
 .testimonial .section-two .close-inverted{
   /* color: brown; */
@@ -1658,8 +1716,8 @@ span.plus {
   margin-top: 0px;
 }
 .footer-section h3 {
-  font-size: 68px;
-  font-weight: 500;
+  font-size: 48px;
+  font-weight: 700;
 }
 .footer-bottom h5 {
   font-size: 20px;
@@ -1667,7 +1725,8 @@ span.plus {
   font-family: var(--main-three-font-family);
 }
 .footer-bottom p {
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 400;
   font-family: var(--main-three-font-family);
   color: var(--text-color);
 }
@@ -1780,6 +1839,9 @@ label{
   height: 100%;
   width: 100%;
   transform: scale(1.2);
+}
+.banner{
+  font-family: Poppins;
 }
 /* Mobile menu start */
 .menu {
@@ -1970,12 +2032,12 @@ label{
   /* .swiper-wrapper{
     flex-wrap: wrap !important;
   } */
-  .mySwiper .swiper-slide .slide-text p,
+  /* .mySwiper .swiper-slide .slide-text p,
   .team-text h3,
   .team-swiper .slick-prev i,
   .team-swiper .slick-next i {
     font-size: 20px !important;
-  }
+  } */
 
 
   .industires {
