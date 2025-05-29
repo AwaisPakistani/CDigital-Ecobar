@@ -515,16 +515,14 @@ button.slick-disabled {
 .industries .box {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Push content to the bottom */
-  height: 100%;              /* Ensure it fills the column */
+  justify-content: flex-end; 
+  height: 100%;              
   padding: 0 10px;
   position: relative;
 }
 
-.industries .box h1 {
-  margin-bottom: 0.3rem; /* Adjust spacing as needed */
-}
 .industires .box h1 {
+  margin-bottom: 0.3rem;
   color: var(--main-color-3);
   font-size: 35px;
   font-weight: 500;
@@ -537,7 +535,7 @@ button.slick-disabled {
   position: relative;
 }
 .box p {
-  position: absolute;
+    position: absolute;
     transform: translateY(50px);
     visibility: hidden;
     padding: 0px 15px;
@@ -549,11 +547,13 @@ button.slick-disabled {
   transform: translateY(0px);
   visibility: visible;
   color: white;
-  
 }
 .box:hover h1{
     transform: translateY(-10px) !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
 }
+
 .industires .industries-text {
   font-size: 24px;
   font-weight: 400;
@@ -1035,14 +1035,22 @@ button.slick-disabled {
   color: white;
 }
 .testimonial .section-one{
-  font-size: 40px;
+  font-size: 35px;
 }
+
 
 .testimonial .section-two h1{
   font-size: 50px;
 }
 .testimonial .section-two span{
   font-size: 30px;
+}
+.testimonial .section-two .text-section{
+  padding-left: 25%;
+}
+.testimonial .section-two .image-section img{
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
 }
 .testimonial .section-two hr{
   font-weight: bold;
