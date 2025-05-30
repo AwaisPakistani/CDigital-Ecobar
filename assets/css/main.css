@@ -728,15 +728,13 @@ button.slick-disabled {
 .efficiency .bullets {
     list-style: disc;
     padding-left: 1.5rem;
-  }
-
+}
 .efficiency .bullets li {
-    margin-right: 2rem;          /* adds spacing between items */
-  }
-
+    margin-right: 2.1rem; 
+}
 .efficiency .bullets.d-flex li::marker {
-    font-size: 2rem;           /* bigger bullets if needed */
-    color: #007bff;              /* optional: color */
+    font-size: 2rem;           
+    color: #915D3D;
 }
 .efficiency .container-fluid{
     background:url("../images/efficiency.png") no-repeat center center;
