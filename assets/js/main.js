@@ -230,64 +230,86 @@ const swiper = new Swiper(".mySwiper", {
 
 // jQuery
 
-$(window).on("scroll", function () {
-  const header = $("#navbarchange");
-  const targetSection = $("#division");
-  const logo = $("#logo");
+// $(window).on("scroll", function () {
+//   const header = $("#navbarchange");
+//   const targetSection = $("#division");
+//   const logo = $("#logo");
 
-  if (targetSection.length) {
-    const sectionTop = targetSection.offset().top;
+//   if (targetSection.length) {
+//     const sectionTop = targetSection.offset().top;
     
-    if ($(window).scrollTop() + 400 >= sectionTop) {
-      header.addClass("fixed ").removeClass("position-absolute");
-      // how to change the logo src
-      console.log(logo.attr("src"));
-      logo.attr("src", "assets/images/logo-black.png");
-      $("#mobile-logo").attr("src", "assets/images/logo-black.png");
-      header.find("ul li a").css("color", "#000");
-      header.find("ul.bordered").css("border-color", "#000");
-      header.find(".btn-main").addClass("btn-black");
-      header.find(".line").css("stroke", "#000");
+//     if ($(window).scrollTop() + 400 >= sectionTop) {
+//       header.addClass("fixed ").removeClass("position-absolute");
+//       // how to change the logo src
+//       console.log(logo.attr("src"));
+//       logo.attr("src", "assets/images/logo-black.png");
+//       $("#mobile-logo").attr("src", "assets/images/logo-black.png");
+//       if (window.location.pathname.includes("product_detail")){
+//         header.find("ul li a").css("color", "#000");
+//       }
+//       header.find("ul.bordered").css("border-color", "#000");
+//       header.find(".btn-main").addClass("btn-black");
+//       header.find(".line").css("stroke", "#000");
 
-    } else {
-      header.removeClass("fixed ").addClass("position-absolute");
-      logo.attr("src", "assets/images/logo-black.png");
-      $("#mobile-logo").attr("src", "assets/images/logo-black.png");
+//     } else {
+//       header.removeClass("fixed ").addClass("position-absolute");
+//       logo.attr("src", "assets/images/logo-black.png");
+//       $("#mobile-logo").attr("src", "assets/images/logo-black.png");
 
-      header.find("ul li a.nav-link").css("color", "#000");
-      header.find(".line").css("stroke", "#fff");
-      header.find("ul.bordered").css("border-color", "#fff");
-      header.find(".btn-main").removeClass("btn-black");
-    }
-  }else{
-    if ($(window).scrollTop() >= 200) {
-      header.addClass("fixed ").removeClass("position-absolute");
-      // how to change the logo src
-      console.log(logo.attr("src"));
-      logo.attr("src", "assets/images/logo-black.png");
-      $("#mobile-logo").attr("src", "assets/images/logo-black.png");
-      header.find("ul li a").css("color", "#000");
-      header.find("ul.bordered").css("border-color", "#000");
-      header.find(".btn-main").addClass("btn-black");
-      header.find(".line").css("stroke", "#000");
+//       // header.find("ul li a.nav-link").css("color", "#000");
+//       header.find(".line").css("stroke", "#fff");
+//       header.find("ul.bordered").css("border-color", "#fff");
+//       header.find(".btn-main").removeClass("btn-black");
+//     }
+//   }else{
+//     if ($(window).scrollTop() >= 200) {
+//       header.addClass("fixed ").removeClass("position-absolute");
+//       // how to change the logo src
+//       console.log(logo.attr("src"));
+//       logo.attr("src", "assets/images/logo-black.png");
+//       $("#mobile-logo").attr("src", "assets/images/logo-black.png");
+//       // if (!window.location.pathname.includes("product")){
+//         header.find("ul li a").css("color", "#000");
+//       // }
+//       header.find("ul.bordered").css("border-color", "#000");
+//       header.find(".btn-main").addClass("btn-black");
+//       header.find(".line").css("stroke", "#000");
 
-    } else {
-      header.removeClass("fixed ").addClass("position-absolute");
-      logo.attr("src", "assets/images/logo-black.png");
-      $("#mobile-logo").attr("src", "assets/images/logo-black.png");
+//     } else {
+//       header.removeClass("fixed ").addClass("position-absolute");
+//       logo.attr("src", "assets/images/logo-black.png");
+//       $("#mobile-logo").attr("src", "assets/images/logo-black.png");
 
-      header.find("ul li a.nav-link").css("color", "#fff");
-      header.find(".line").css("stroke", "#fff");
-      header.find("ul.bordered").css("border-color", "#fff");
-      header.find(".btn-main").removeClass("btn-black");
-    }
-  }
+//      if (window.location.pathname.includes("product_detail")){
+//       // alert("d")
+//         header.find("ul li a").css("color", "#fff");
+//       }
+      
+//       header.find(".line").css("stroke", "#fff");
+//       header.find("ul.bordered").css("border-color", "#fff");
+//       header.find(".btn-main").removeClass("btn-black");
+      
+//     }
+//   }
   
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  if (window.location.pathname.includes("product_detail")) {
+    navLinks.forEach(link => {
+      link.style.color = "white";
+    });
+  }
 });
 
 $(document).ready(function () {
   var counted = false;
+  if (window.location.pathname.includes("product_detail")) {
 
+
+  }
   $(window).scroll(function () {
     if($('.counter-number').length){
     var oTop = $('.counter-number').offset().top - window.innerHeight;

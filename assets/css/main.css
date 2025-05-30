@@ -211,7 +211,8 @@ textarea{
   color: black !important;
 }
 .navbar ul .nav-item a.nav-link:hover {
-  color: black !important;
+  color: transparent !important;
+  /* text-shadow: 0 0 2px rgba(255,255,255,0.5); */
   /* font-weight: 500; */
   transition: all 0.5s ease;
 }
@@ -406,7 +407,24 @@ textarea{
   }
 }
 
+@media (max-width: 672px) {
+  .home-about {
+    margin-top: -100px !important;
+    padding-top: 0px !important;
+  }
+}
+@media (max-width: 672px) {
+  .banner {
+    margin-bottom: -200px !important;
+    margin-top: 0px !important;
+  }
+}
 
+@media (max-width: 672px) {
+  .banner .text-section {
+    margin-top: 100px !important;
+  }
+}
 button.slick-disabled {
   opacity: 0.5;
   cursor: no-drop !important ;
@@ -563,6 +581,7 @@ button.slick-disabled {
     color: transparent;
     transition: all 0.5s ease !important;
 }
+
 .box:hover p {
   position: relative;
   transform: translateY(0px);
@@ -573,6 +592,20 @@ button.slick-disabled {
     transform: translateY(-10px) !important;
     margin-bottom: 0px !important;
     padding-bottom: 0px !important;
+}
+@media (max-width: 672px) {
+  .box p {
+    position: relative;
+    visibility: visible;
+    transform: translateY(0);
+    color: white; /* Or any readable color */
+  }
+
+  .box h1 {
+    transform: translateY(0);
+    margin-bottom: 0.3rem;
+    padding-bottom: 15px;
+  }
 }
 
 .industires .industries-text {
@@ -616,6 +649,16 @@ button.slick-disabled {
   letter-spacing: 0px;
   text-align: center;
   margin-bottom: 40px;
+}
+@media (max-width: 672px) {
+  .fusion .main-fusion h2{
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: 0px;
+      text-align: center;
+      margin-bottom: 40px;
+  }
 }
 .fusion-box {
   margin-top: 10px;
@@ -726,6 +769,13 @@ button.slick-disabled {
   letter-spacing: 0px;
   color: black;
 }
+@media (max-width: 672px) {
+  .efficiency .bullets {
+     display: block !important;
+     padding-left: 2rem !important;
+     text-align: left !important;
+  }
+}
 .efficiency .bullets {
     list-style: none;
     padding-left: 1.5rem;
@@ -737,7 +787,7 @@ button.slick-disabled {
 .efficiency ul li::before {
   content:'';
     background: #915D3D;
-        content: '';
+    content: '';
     background: #915D3D;
     position: absolute;
     height: 15px;
@@ -772,13 +822,13 @@ button.slick-disabled {
 .smart-move .smart-move-text-main span{
   color: #915D3D;
 }
-.smart-move .bullets-section h3{
+.smart-move .bullets-section .bullet-text-main{
   font-size: 20px;
   font-weight: 400;
   font-family: var(--main-font-family);
   color: #915D3D;
 }
-.smart-move .bullets-section h4{
+.smart-move .bullets-section .bullet-text-brief{
   font-size: 16px;
   font-weight: 400;
 }
@@ -798,6 +848,11 @@ button.slick-disabled {
   line-height: 100%;
   letter-spacing: 0px;
   color: black;
+}
+@media (max-width: 672px) {
+  .advantage .advantage-text {
+      line-height: 200%;
+  }
 }
 .advantage .advantage-text span{
   color: #915D3D;
