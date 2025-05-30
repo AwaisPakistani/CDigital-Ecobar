@@ -12,6 +12,7 @@
   --linear-color-2: linear-gradient(0deg, #eabf76 26.97%, #000000 78.09%);
 
   --main-color-3: #fff;
+  --main-color-5: #915D3D;
   --main-color-4: transparent;
   --main-font-family: "Poppins", sans-serif;
   --main-two-font-family: "Poppins", sans-serif;
@@ -110,8 +111,8 @@ textarea{
 }
 .footer-bottom hr {
   border: 0;
-  height: 3px; /* Thickness */
-  background-color: brown; /* Brown color */
+  height: 2px; /* Thickness */
+  background-color: #915D3D; /* Brown color */
   margin: 20px 0; /* Optional spacing */
 }
 
@@ -230,7 +231,7 @@ textarea{
   color: var(--main-color-3);
 }
 .btn-black {
-  border-color: var(--main-color-2);
+  /* border-color: var(--main-color-2); */
   color: var(--main-color-2);
 }
 .btn-black:hover {
@@ -726,15 +727,25 @@ button.slick-disabled {
   color: black;
 }
 .efficiency .bullets {
-    list-style: disc;
+    list-style: none;
     padding-left: 1.5rem;
 }
 .efficiency .bullets li {
+  position: relative;
     margin-right: 2.1rem; 
 }
-.efficiency .bullets.d-flex li::marker {
-    font-size: 2rem;           
-    color: #915D3D;
+.efficiency ul li::before {
+  content:'';
+    background: #915D3D;
+        content: '';
+    background: #915D3D;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 15%;
+    left: -32px;
+
 }
 .efficiency .container-fluid{
     background:url("../images/efficiency.png") no-repeat center center;
@@ -1719,6 +1730,9 @@ span.plus {
   background-color: #915D3D;
   margin-top: 0px;
 }
+.footer-bottom  a,p{
+  color: #915D3D;
+}
 .footer-section h3 {
   font-size: 48px;
   font-weight: 700;
@@ -1732,7 +1746,6 @@ span.plus {
   font-size: 20px;
   font-weight: 400;
   font-family: var(--main-three-font-family);
-  color: var(--text-color);
 }
 
 .footer-btn {
@@ -2021,7 +2034,8 @@ label{
     font-size: 30px;
   }
   .footer-section p {
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 400;
   }
   .footer-list {
     display: block !important;
