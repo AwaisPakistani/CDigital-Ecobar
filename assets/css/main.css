@@ -2186,6 +2186,9 @@ label{
   .slick-next {
     right: 2%;
   }
+  .mobile-column-reverse{
+    flex-direction: column-reverse
+  }
   .slick-slide img {
     margin: 0px auto;
   }
