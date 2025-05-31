@@ -1886,6 +1886,7 @@ span.plus {
 .footer-bottom  a,p{
   color: #915D3D;
 }
+
 .footer-section h3 {
   font-size: 48px;
   font-weight: 700;
@@ -1937,7 +1938,7 @@ span.plus {
   margin-left: 20px;
 }
 .footer-list ul li a {
-  color: var(--main-color-2);
+  color: #915D3D;
   font-size: 12px;
   font-weight: 400;
   font-family: var(--main-three-font-family);
@@ -2100,7 +2101,7 @@ label{
 .contact-section .bullets .item{
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   padding-top: 0px;
 }
 .contact-section .bullets .item .text-bullet-main{
@@ -2174,6 +2175,9 @@ label{
    }
    .testimonial .section-two .text-section{
       padding-left: 0%;
+    }
+    .testimonial .section-two .text-section p{
+      color: #fff;
     }
   .testimonial .section-two{
       margin-bottom: 50px !important;
