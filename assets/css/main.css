@@ -836,6 +836,9 @@ button.slick-disabled {
     left: -32px;
 
 }
+.product_detail{
+  background-color:black;
+}
 .efficiency .container-fluid{
     background:url("../images/efficiency.png") no-repeat center center;
     background-size: cover;
